@@ -1,0 +1,19 @@
+Button {
+    margin: 1px 1px 1px 1px;
+    padding: 1px 2px 1px 2px;
+}
+
+VisualElement {
+}
+
+.setupButton {
+    background-color: rgb(86, 135, 133);
+    border-left-color: rgba(231, 231, 231, 0);
+    border-right-color: rgba(231, 231, 231, 0);
+    border-top-color: rgba(231, 231, 231, 0);
+    border-bottom-color: rgba(231, 231, 231, 0);
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}

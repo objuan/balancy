@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles.uss?fileID=7433441132597879392&amp;guid=6940faa17f9f96145a99a683bd8a4a20&amp;type=3#Styles" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1;">
+        <ui:VisualElement name="top" style="flex-grow: 0; height: 31px; background-color: rgb(125, 125, 125); flex-direction: row;">
+            <ui:Label tabindex="-1" text="SumoV0.1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lblName" style="-unity-font-style: bold;" />
+            <ui:Label tabindex="-1" text="." parse-escape-sequences="true" display-tooltip-when-elided="true" name="lblAddress" style="flex-grow: 1;" />
+            <ui:TextField picking-mode="Ignore" label="IP Address" value="filler text" name="txtAddress" style="flex-grow: 1; margin-top: 0; margin-right: 2px; margin-bottom: 0; margin-left: 2px;" />
+            <ui:Button text="IP" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnIP" />
+            <ui:Button text="Drive" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnDrive" class="setupButton" style="height: 30px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 0; flex-direction: row;">
+            <ui:Button text="Reset MPU" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnResetMPU" />
+            <ui:VisualElement style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:GroupBox text="Dump" style="border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; background-color: rgb(192, 192, 192); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lblDump" style="flex-grow: 1;" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>

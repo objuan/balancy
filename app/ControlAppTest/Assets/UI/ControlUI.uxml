@@ -1,0 +1,45 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles.uss?fileID=7433441132597879392&amp;guid=6940faa17f9f96145a99a683bd8a4a20&amp;type=3#Styles" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgb(173, 173, 173); font-size: 11px;">
+        <ui:VisualElement name="top" style="flex-grow: 0; height: 31px; background-color: rgb(125, 125, 125); flex-direction: row;">
+            <ui:Label tabindex="-1" text="SumoV0.1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lblName" style="-unity-font-style: bold;" />
+            <ui:Label tabindex="-1" text="." parse-escape-sequences="true" display-tooltip-when-elided="true" name="lblAddress" style="flex-grow: 1;" />
+            <ui:Button text="Update" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnUpdateState" />
+            <ui:Button text="Setup" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnSetup" class="setupButton" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 0; flex-direction: row; height: 27px;">
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnMode" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lblSensors" style="flex-grow: 1;" />
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnBreak" />
+        </ui:VisualElement>
+        <ui:VisualElement name="vsTestMode" style="flex-grow: 0;">
+            <ui:VisualElement name="vsLeftMotor" style="flex-grow: 1; flex-direction: row;">
+                <ui:Label tabindex="-1" text="Left Motor" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" />
+                <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lblLeftMotor" />
+                <ui:SliderInt picking-mode="Ignore" value="0" high-value="100" name="sldLeft" low-value="-100" style="flex-grow: 1;" />
+                <ui:Button text="Stop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnLefStop" />
+            </ui:VisualElement>
+            <ui:VisualElement name="vsRightMotor" style="flex-grow: 1; flex-direction: row;">
+                <ui:Label tabindex="-1" text="Right  Motor" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" />
+                <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lblRightMotor" />
+                <ui:SliderInt picking-mode="Ignore" value="0" high-value="100" name="sldRight" low-value="-100" style="flex-grow: 1;" />
+                <ui:Button text="Stop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnRightStop" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="vsGuiding" style="flex-grow: 1; background-color: rgb(154, 154, 154);">
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:VisualElement style="flex-grow: 1; width: 50%;">
+                    <ui:VisualElement name="vsSpeed" style="flex-grow: 1; background-color: rgba(179, 255, 187, 0.99); margin-top: 10px; margin-right: 40px; margin-bottom: 10px; margin-left: 40px;" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1; width: 50%;">
+                    <ui:VisualElement name="vsSteering" style="flex-grow: 1; flex-direction: row; margin-top: 50px; margin-right: 50px; margin-bottom: 50px; margin-left: 50px; background-color: rgba(7, 59, 214, 0.49); padding-right: 0;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row; height: 3px; max-height: 30px;">
+                <ui:Button text="Clear" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnStopSpeed" style="flex-grow: 1;" />
+                <ui:Button text="Clear" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnStopSteering" style="flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="vsBottom" style="flex-grow: 0; flex-shrink: 0;" />
+    </ui:VisualElement>
+</ui:UXML>
